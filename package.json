@@ -1,0 +1,35 @@
+{
+  "name": "google_messages",
+  "version": "1.0.0",
+  "description": "An electron wrapper for Google Messages for Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Calabree/Messages-for-Desktop"
+  },
+  "author": "Peter Calabrese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calabree/Messages-for-Desktop/issues"
+  },
+  "homepage": "https://github.com/Calabree/Messages-for-Desktop#readme",
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5"
+  },
+  "build": {
+    "appId": "tech.calabrese.messagesfordesktop",
+    "productName": "Messages for Desktop",
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "target": "default",
+      "icon": "assets/messages.icns",
+      "publish": "github"
+    }
+  }
+}
